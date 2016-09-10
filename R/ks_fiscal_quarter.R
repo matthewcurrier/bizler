@@ -1,3 +1,13 @@
+#' A period Function
+#'
+#' This function allows you to turn any date into a fiscal quarter for ks.
+#' @param x Do you love cats? Defaults to TRUE.
+#' @param with_year Do you love cats? Defaults to FALSE.
+#' @keywords fiscal quarter
+#' @export
+#' @examples
+#' ks_fiscal_quarter()
+
 #modification of lubridate qtr function adapted for keysight fiscal qtr
 ks_fiscal_quarter <- function (x, with_year = FALSE)
 {
