@@ -1,0 +1,23 @@
+---
+title: "To Do"
+author: "Matthew Currier"
+date: "September 10, 2016"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## New york motor vehicle collision data taken from
+https://data.cityofnewyork.us/Public-Safety/NYPD-Motor-Vehicle-Collisions/h9gi-nx95
+
+
+## Add aggregate function for time periods (e.g., aggregate up to year, qtr, mom)
+## Add a year over year function.
+## Add a qtr over qtr function.
+## Add a qtr over qtr function.
+
+## Create html data table of results.
+## 
+
