@@ -37,7 +37,8 @@ myzootest <- merge(myzoo, zoo(,tt), fill = 0)
 #This seems to work
 myzoo2 <-aggregate(myzootest, as.yearmon, sum)
 
-
+#Calculate percentage of last year's
+myzoo2/lag(myzoo2)
 #You should be able to compute lags from this point onwards
 
 
