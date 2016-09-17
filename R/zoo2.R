@@ -38,14 +38,22 @@ myzootest <- merge(myzoo, zoo(,tt), fill = 0)
 myzoo2 <-aggregate(myzootest, as.yearmon, sum)
 
 #Calculate percentage of last year's
-myzoo2/lag(myzoo2)
+zoo_again <- myzoo2 / lag(myzoo2)
 #You should be able to compute lags from this point onwards
 
 
 
 # This will take monthly zoo object and aggregate it over
 # quarter
-myzoo2 <- aggregate(myzoo2, as.Date(as.yearqtr(time(myzoo2))), sum)
+myzoo2 <- aggregate(myzootest, as.Date(as.yearqtr(time(myzoo2))), sum)
+#Calculate percentage of last year's
+zoo_again <- myzoo2 / lag(myzoo2)
+
+# This will take monthly zoo object and aggregate it over
+# yeer
+myzoo2 <- aggregate(myzootest, as.Date(time(myzoo2), "%Y"), sum)
+#Calculate percentage of last year's
+zoo_again <- myzoo2 / lag(myzoo2)
 
 
 
